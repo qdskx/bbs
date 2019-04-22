@@ -1,0 +1,81 @@
+.reg{
+	width:960px;
+	height: 365px;
+	margin:10px auto;
+	border:1px solid #CDCDCD;
+}
+.getpass{
+	height: 360px;
+}
+.reg_top{
+	width:950px;
+	height: 34px;
+	background: #F2F2F2;
+	font-size: 15px;
+	font-weight: bold;
+	color:#444444;
+	line-height: 34px;
+	padding-left: 10px;
+	border-bottom:1px solid #CDCDCD;
+}
+.form_box{
+	width:860px;
+	height: 260px;
+	padding: 40px 0 30px 100px;
+}
+.form_box .user_box{
+	width:760px;
+	height: 34px;
+	margin-bottom: 10px;
+	border-bottom: 1px dotted #CDCDCD;
+}
+.form_box .user_box p{
+	width:60px;
+	line-height: 23px;
+	/*background: red;*/
+	margin-right: 15px;
+	margin-left: 63px;
+}
+.form_box .user_box p .sym{
+	color:#FF4F00;
+}
+.form_box .user_box p a:hover{
+	text-decoration: none;
+}
+.form_box .user_box .user{
+	width:230px;
+	height: 23px;
+	border-top:#848484 solid 1px;
+	border-left:#848484 solid 1px;
+	border-right:#E0E0E0 solid 1px;
+	border-bottom:#E0E0E0 solid 1px;
+}
+.form_box .user_box .verify{
+	width:60px;
+	height: 23px;
+	border-top:#848484 solid 1px;
+	border-left:#848484 solid 1px;
+	border-right:#E0E0E0 solid 1px;
+	border-bottom:#E0E0E0 solid 1px;
+}
+.form_box .user_box .ver{
+	margin-left: 10px;
+	margin-top: 0;
+	margin-right: 2px;
+	width: 80px;
+	height: 23px;
+}
+.form_box .sub_reg{
+	width:50px;
+	height: 25px;
+	border:1px solid #235994;
+	color:#fff;
+	margin-top:12px;
+	margin-left: 142px;
+	font-weight: bold;
+	font-size: 12px;
+	background:-webkit-linear-gradient(rgba(45,123,203,1), rgba(37,93,173, 1));
+	background:-o-linear-gradient(rgba(45,123,203,1), rgba(37,93,173, 1));
+	background:linear-gradient(rgba(45,123,203,1), rgba(37,93,173, 1)); 
+}
+

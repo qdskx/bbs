@@ -1,0 +1,28 @@
+footer{
+	width: 960px;
+	height: 103px;
+	padding-top: 10px;
+	margin:0 auto;	
+	/*background: red;*/
+	border-top: 1px solid #cdcdcd;
+}
+.footer_l{
+	line-height: 20px;
+}
+.fl_cont{
+	font-family: 'MicroSoft YaHei';
+}
+.f_bold{
+	font-family: 'MicroSoft YaHei';
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+.footer_r{
+	line-height: 20px;
+}
+.foo_fam{
+	font-family: '宋体';
+}
+.foo_grey{
+	color: #CFCFDA;
+}

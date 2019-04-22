@@ -1,0 +1,119 @@
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>{$title}</title>
+		<link rel="stylesheet" href="{$dir}/css/base.css" />
+		<link rel="stylesheet" href="{$dir}/css/header.css" />
+		<link rel="stylesheet" href="{$dir}/css/register.css" />
+		<link rel="stylesheet" href="{$dir}/css/footer.css" />
+		<script type="text/javascript" src="./public/js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript"> 
+			$(function(){
+			 	$('#btn1').click(function(){
+			 		var phone=$('#dx').val();
+			 		data={
+			 			'tel':phone
+			 		}
+			 		$.post('message.php',data,function(){
+			 			
+			 		})
+			 	})
+			 })
+
+			 function refresh() 
+			 { 
+			  document.getElementById('img').src = "./helper/code.php?"+Math.random(); 
+			 } 
+        </script> 
+	</head>
+
+	<body>
+		<div class="box clearFix">
+			<!-- 头部 start -->
+			{include 'header.html'}
+			<!-- 头部 end -->
+
+
+
+			<!-- 找回密码 start -->
+			<div class='reg getpass'>
+				<div class='reg_top'>找回密码</div>
+				<div class='form_box'>
+					<form action="getpass.php" method='post' class='clearFix'>
+						<div class='user_box clearFix'>
+							<p class="fl clearFix">
+								<a href="#" class='fr'>用户名:</a>
+								<i class=' sym fr'>*</i>				
+							</p>
+							<input type="text" name='username' class='user fl'/>
+						</div>
+
+
+						<div class='user_box clearFix'>
+							<p class="fl clearFix">
+								<a href="#" class='fr'>邮箱:</a>
+								<i class=' sym fr'>*</i>				
+							</p>
+							<input type="text" name='email' class='user fl' />	
+						</div>
+
+
+
+
+						<div class='user_box clearFix'>
+							<p class="fl clearFix">
+								<a href="#" class='fr'>手机号:</a>
+								<i class='sym fr'>*</i>				
+							</p>
+							<input type="text" name='tel' class='user fl' id='dx' />
+							<a href='javascript:;' class='fl' style='margin-left: 15px;' id='btn1'>点击获取短信验证码</a> 
+						</div>
+
+						<div class='user_box clearFix'>
+							<p class="fl clearFix" style='width:90px;margin-left: 33px;'>
+								<a href="#" class='fr'>手机验证码:</a>
+								<i class='sym fr'>*</i>				
+							</p>
+							<input type="text" name='tel_verify' class='verify fl'/>
+							<a href="#">请输入手机获取到的验证码</a>
+						</div>
+
+						<div class='user_box clearFix'>
+							<p class="fl clearFix">
+								<a href="#" class='fr'>验证码:</a>
+								<i class=' sym fr'>*</i>				
+							</p>
+							<input type="text" name='verify' class='verify fl'/>
+							<img src="../helper/code.php" class=" fl ver" id='img' onclick="this.src='../helper/code.php'"  />
+							<a href="javascript:;"  id="btn" onclick="refresh()">看不清，换一张</a>
+						</div>
+
+
+
+
+
+						<input type="submit" value='提交' name="sub_pas" class='sub_reg'/>											
+					</form>
+				</div>
+			</div>
+			<!-- 找回密码 end -->
+
+
+			
+			<!-- footer start -->
+			{include 'footer.html'}
+			<!-- footer end -->
+
+
+			
+		</div>
+		<script>
+			var oBtn= document.getElementById('btn');
+			var oImg= document.getElementById('img');
+			oBtn.onclick = function ()
+			{
+				oImg.src = '../helper/code.php?'+Math.random();
+			}
+		</script>
+	</body>
+</html>

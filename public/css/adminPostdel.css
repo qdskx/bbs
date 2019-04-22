@@ -1,0 +1,184 @@
+ .right{
+	border-left:1px solid #b5cfd9;
+	width:1080px;
+	min-height:584px;
+	background:#fff;
+	float:left;
+	font-family:宋体;
+	border-top:0px solid #e8f3fb;
+	box-shadow:0 0px 10px 3px #e8f3fb inset;
+}
+.right .r-top{
+	font-size:14px;
+	color:#0099cc;
+	margin-top:20px;
+	margin-left:20px;
+	font-weight:bold;
+}
+.right .r1{
+	width:1042px;
+	height:36px;
+	float:left;
+	margin-left:20px;
+	margin-top:20px;
+	background:-moz-linear-gradient(top,#eef6fc,#f5f9fe);/*火狐*/ 
+    background:-webkit-gradient(linear, 0% 50%, 0% 100%,from(#eef6fc), to(#f5f9fe));/*谷歌*/ 
+	color:#0099cc;
+	font-size:12px;
+	font-weight:bold;
+	line-height:36px;
+	border-bottom:1px dotted #deeffb;
+}
+.right .r1 p{
+	margin-left:5px;
+}
+.right .r2{
+	width:1042px;
+	height:35px;
+	float:left;
+	color:#555555;
+	line-height:35px;
+	font-size:12px;
+	margin-left:20px;
+	border-bottom:1px dotted #deeffb;
+}
+
+.right .r2 li{
+	display:inline-block;
+	font-weight:bold;
+}
+.r3{
+	width:1042px;
+	height:41px;
+	float:left;
+	color:#555555;
+	line-height:41px;
+	font-size:12px;
+	margin-left:20px;
+	border-bottom:1px dotted #deeffb;
+}
+.r3 input{
+	margin-left:3px;
+	margin-right:43px;
+	float:left;
+	margin-top:13px;
+}
+p{
+	display:inline-block;
+	font-size:12px;
+	color:#555;
+	float:left;
+}
+.r3:hover{
+	background:#eef6fc;
+}
+.r3 p{
+
+	height:41px;
+	display:inline-block;
+	
+}
+.r3 i{
+	display:inline-block;
+}
+.r3 a{
+	width:333px;
+	height:20px;
+	line-height:20px;
+	display:inline-block;
+	float:left;
+}
+.r3 i{
+	width:333px;
+	height:20px;
+	line-height:20px;
+	display:inline-block;
+	float:left;
+}
+.r3 .b1{
+	width:128px;
+	
+}
+
+.r3 .b2{
+	width:235px;
+	
+}
+.r3 .b3{
+	width:358px;
+	line-height:0px;
+}
+/*.r3 .b4{
+	width:305px;	
+}*/
+.r3 .b3 a{
+	color: #555;
+}
+.submit{
+	margin-left:20px;
+	background:#dddddd;
+	width:70px;
+	height:21px;
+	margin-top:12px;
+	border-right:1px solid #666666;
+	border-bottom:1px solid #666666;
+}
+
+
+
+/*一个分页 start*/
+.page{
+	width:605px;
+	height: 25px;
+	/*margin-right: 160px;*/
+	margin-top: 10px;
+	line-height: 25px;
+}
+.page_num{
+	width:30px;
+	height: 21px;
+	margin-top: 3px;
+}
+.sub_page{
+	width:32px;
+	height: 22px;
+	margin-top: 2px;
+}
+.page_mar{
+	margin:0 10px;
+	color:#555;
+}
+/*一个分页 end*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

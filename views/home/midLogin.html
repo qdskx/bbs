@@ -1,0 +1,74 @@
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>{$title}</title>
+		<link rel="stylesheet" href="{$dir}/css/base.css" />
+		<link rel="stylesheet" href="{$dir}/css/header.css" />
+		<link rel="stylesheet" href="{$dir}/css/midLogin.css" />
+		<link rel="stylesheet" href="{$dir}/css/footer.css" />
+	</head>
+
+	<body>
+		<div class="box clearFix">
+			<!-- 头部 start -->
+			{include 'header.html'}
+			<!-- 头部 end -->
+
+
+
+
+
+			<!-- midLogin start	-->		
+			<div class='midLogin'>
+				<p class='login_top clearFix'>
+					<i class='login_top_bg fl'>
+						<img src="{$dir}/img/info.gif" alt="" />
+					</i>
+					<i class='login_top_zi fl'>抱歉，您尚未登录，没有权限在该版块发帖</i>
+				</p>
+				
+				<form action="midLogin.php" method='post' enctype='multipart/form-data' class='form'>
+					<i class='form_zi'>用户登录</i><br />
+					<i class='zi zi1'>用户名:</i>
+					<input type='text' name='username' class='user' />
+					<a href='register.php' class='zi4'>立即注册</a>
+					<hr class='xuxian' />
+					<i class='zi zi2'>密码:</i>
+					<input type='password' name='password' class='user' />
+					<a href='getpass.php' class='zi4'>找回密码</a>
+					<hr class='xuxian' />
+					<i class='zi'>安全提问:</i>
+					<select class='user safe'>
+						<option>安全提问(未设置请忽略)</option>
+						<option>母亲的名字</option>
+						<option>爷爷的名字</option>
+						<option>父亲出生的城市</option>
+						<option>你其中的一位老师的名字</option>
+						<option>你个人计算机的型号</option>
+						<option>你最喜欢的餐馆名称</option>
+						<option>驾驶执照最后四位数字</option>
+					</select>
+					<hr class='xuxian' />
+					<i class='zi zi2'>答案:</i>
+					<input type='text' name='anser' class='user' />
+					<hr class='xuxian' />
+					<input type='checkbox' name='auto' class='auto' />
+					<a href='#' class='zi3'>自动登录</a>
+					<input type='submit' name='midLogin' class='log' value='登录'/>			
+				</form>				
+			</div>	
+			<!-- midLogin end	-->
+
+
+
+
+
+			<!-- footer start -->
+			{include 'footer.html'}
+			<!-- footer end -->
+
+
+
+		</div>
+	</body>
+</html>

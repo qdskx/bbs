@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset='utf-8' />
+		<title>个人签名</title>
+		<link rel='stylesheet' type='text/css' href='{$dir}/css/base.css' />
+		<link rel='stylesheet' type='text/css' href='{$dir}/css/header.css' />
+		<link rel='stylesheet' type='text/css' href='{$dir}/css/list.css' />
+		<link rel='stylesheet' type='text/css' href='{$dir}/css/footer.css' />
+		<link rel='stylesheet' type='text/css' href='{$dir}/css/personalSignature.css' />
+		<script type="text/JavaScript" src="{$dir}/ckeditor/ckeditor.js"></script>
+	</head>
+	<body>
+		<div class="box clearFix">
+			<!-- 头部 start -->
+			{include header.html}
+			<!-- 头部 end -->
+
+
+
+			<!-- 头部下边的一角 start -->
+			<div class="list_talk clearFix">
+				<i class="home"></i>
+				<i class="gt">></i>
+				<a href="personalData.php" class="forum">设置</a>
+				<i class="gt">></i>
+				<i class="forum">个人签名</i>
+			</div>
+			<!-- 头部下边的一角 end -->
+
+	
+
+			<!--main start-->
+			<div class="main">
+				<div class="main-l">
+					<div class="main-lt"><p>设置</p></div>
+					<ul class="main-lb">
+						<li><a href='modifyHead.php'>修改头像</a></li>
+						<li><a href="personalData.php">个人资料</a></li>
+						<li class='dian'>
+							<a href='personalSignature.php'>个人签名</a>
+						</li>
+						<li><a href="passwordSecurity.php">密码安全</a></li>					
+					</ul>
+				</div>
+				<div class="main-r">
+					<div class="main-rt"><p>个人签名</p></div>
+					<form action="personalSignature.php" method="post" class="fl">
+						<div class="cent">
+							<textarea id="ckeditor" class="ckeditor" name='content'>{$sigNature[0]['autograph']}</textarea>
+						</div>				
+						<input type='submit' name='sub_signature' value="保存" class="fl sub_signature"/>
+					</form>
+				</div>
+			</div>
+			<!--main end-->
+
+
+
+
+
+
+
+
+			<!-- footer start -->
+			{include footer.html}
+			<!-- footer end -->
+		</div>
+	</body>
+</html>

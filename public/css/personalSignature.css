@@ -1,0 +1,147 @@
+.home2{
+	font-size:12px;
+	color:#666;
+	width:100px;
+	height:12px;
+	display:inline-block;
+	float:left;
+	margin-top:7px;
+}
+.main{
+	width:958px;
+	height:515px;
+	border:1px solid #ccc;
+	border-bottom:2px solid #ccc;
+	margin:0 auto;
+}
+.main-l{
+	width:136px;
+	height:515px;
+	float:left;
+	border-right:1px solid #ccc;
+	background:#e8f0f7;
+}
+.main-lt{
+	width:136px;
+	height:44px;
+	float:left;
+	border-bottom:1px dotted #ccc;
+	font-size:15px;
+	font-weight:bold;
+	line-height:44px;
+	
+}
+.main-lb li a{
+	color:#444;
+}
+.main-lb li a:hover{
+	text-decoration: none;
+}
+.main-lt p{
+	margin-left:10px;
+	color:#444;
+}
+.main-lb li{
+	width:117px;
+	height:33px;
+	float:left;
+	border-bottom:1px dotted #ccc;
+	font-size:15px;
+	cursor:pointer;
+	line-height:44px;
+	margin-left:8px;
+}
+.main-lb .dian{
+	width:137px;
+	height:35px;
+	float:left;
+	background:#fff;
+	border-bottom:1px solid #ccc;
+	border-top:1px solid #ccc;
+	font-size:15px;
+	line-height:35px;
+	margin-left:0px;
+	margin-top:-1px;
+}
+.main-lb .dian a{
+	color:#444;
+	margin-left:10px;
+}
+.main-lb li:active {
+	width:135px;
+	height:35px;
+	float:left;
+	background:#fff;
+	border-bottom:1px solid #ccc;
+	border-top:1px solid #ccc;
+	font-size:15px;
+	line-height:35px;
+	margin-left:0px;
+	margin-top:-1px;
+	
+}
+.main-lb li:active a{
+	color:#444;
+	margin-left:10px;
+}
+.main-r{
+	width:821px;
+	height:515px;
+	float:left;
+	
+}
+.main-rt{
+	width:800px;
+	height:31px;
+	float:left;
+	border-bottom:1px solid #ccc;
+	
+	font-weight:bold;
+	margin-top:13px;
+	margin-left:10px;
+}
+.main-rt p{
+	font-size:15px;
+	border:1px solid #ccc;
+	margin-bottom:-1px;
+	border-bottom:1px solid #fff;
+	line-height:30px;
+	height:30px;
+	width:72px;
+	margin-left:5px;
+	text-align:center;
+}
+.main-r .cent{
+	width:798px;
+	height:367px;
+	display:inline-block;
+	border-radius:1%;
+	border:1px solid #d3d3d3;
+	margin-top:13px;
+	margin-left:10px;
+}
+.main-r .sub_signature{
+	width:46px;
+	height:21px;
+	border:1px solid #235994;
+	background:#296dbd;
+	color:#fff;
+	font-weight:bold;
+	display:block;
+	margin-top:24px;
+	margin-left:27px;
+	line-height:21px;
+	text-align:center;
+}
+
+
+
+
+
+
+
+
+
+
+
+

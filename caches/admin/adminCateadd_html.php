@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset='utf-8' />
+		<title><?=$title;?></title>
+		<link rel='stylesheet' type='text/css' href='<?=$dir;?>/css/adminBase.css' />
+		<link rel='stylesheet' type='text/css' href='<?=$dir;?>/css/G-index.css' />
+		<link rel='stylesheet' type='text/css' href='<?=$dir;?>/css/adminCateadd.css' />
+	</head>
+
+	<body>
+		<div class='box clearFix'>
+			<div class='top fl clearFix'>
+				<div class='top1'></div>
+				<div class='top2'></div>
+				<div class='top3'></div>
+				<div class='top-le'><i>Discuz!</i><br/>Control Panel</div>
+				<div class='top-gang'></div>
+				<ul class='nav clearFix'>
+					<li><a href='adminInfo.php'>站点信息</a></li>
+					<li><a href='adminUser.php'>用户管理</a></li>
+					<li><a href='adminCate.php' class='onclick'>版块管理</a></li>
+					<li><a href='adminPost.php'>帖子管理</a></li>
+				</ul>
+				<ul class='exit'>
+					<li><p>你好, 创始人 </p>
+						<em>&nbsp;&nbsp;
+						<?php if(isset($_SESSION['username'])):?>
+							<?=$_SESSION['username'];?>
+						<?php else: ?>
+						admin
+						<?php endif;?>
+						&nbsp;&nbsp;</em>	
+					<a href="adminLoginout.php">[退出]</a>
+					<a href='../index.php'><img src="<?=$dir;?>/img/nav.jpg"></a>
+					</li>
+				</ul>
+			</div>
+			<div class='left clearFix'>
+				<ul class='nav-le clearFix'>
+					<li><a href="adminCate.php"><img src='<?=$dir;?>/img/dot.gif'>管理板块</a></li>
+					<li><a href="adminCatehid.php"><img src='<?=$dir;?>/img/dot.gif'>雪藏板块</a></li>
+					<li class='on1'><a href="adminCateadd.php"><img src='<?=$dir;?>/img/dot.gif'>添加板块</a></li>
+					<li class='bottom'>Powered by <a href="#">phpxy</a> V2© 2012, <a href="#">phpxy</a> Inc.</li>
+				</ul>
+			</div>
+			<div class='right clearFix'>
+				<div class='r-top'>添加版块</div>
+				<div class='r1'><p>技巧提示</p></div>
+				<ul class='r2 clearFix'>
+					<li><img src='<?=$dir;?>/img/dot.gif'>添加时不选择大版块即为添加大版块</li>
+				</ul>
+				<form action="adminCateadd.php" method="post" enctype="multipart/form-data" class="clearFix">
+					<div class='r3'>
+						<p style="margin-left:5px;">版块名称</p>
+						<input type='text' name='catename' value='' />	
+					</div>
+					<div class='r4'>
+						<p style="margin-left:5px;">选择大板块</p>
+						<select name='choice' class='xuan'>
+							<option value='0' selected >-不选择-</option>
+							<?php if(!empty($bigcate)):?>
+							<?php foreach($bigcate as $value):?>
+								<option value="<?=$value['cid'];?>"><?=$value['classname'];?></option>
+							<?php endforeach;?>
+							<?php endif;?>
+							<!-- <option value='2'>程序人生</option> -->
+						</select>
+						<input type='submit' name='sub_add_cate' value='提交' class='submit'/>		
+					</div>
+				</form>
+			</div>
+		</div>
+	
+	
+	</body>
+</html>

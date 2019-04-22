@@ -1,0 +1,77 @@
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>{$title}</title>
+		<link rel="stylesheet" href="../public/css/base.css" />
+		<link rel="stylesheet" href="../public/css/header.css" />
+		<link rel="stylesheet" href="../public/css/register.css" />
+		<link rel="stylesheet" href="../public/css/footer.css" />
+	</head>
+
+	<body>
+		<div class="box clearFix">
+			<!-- 头部 start -->
+			{include header.html}
+			<!-- 头部 end -->
+			<!-- 注册 start -->
+			<div class='reg'>
+				<div class='reg_top'>立即注册</div>
+				<div class='form_box'>
+					<form action="register.php" method='post' class='clearFix'>
+						<div class='user_box clearFix'>
+							<p class="fl clearFix">
+								<a href="#" class='fr'>用户名:</a>
+								<i class=' sym fr'>*</i>				
+							</p>
+							<input type="text" name='username' class='user fl'/>
+						</div>
+						<div class='user_box clearFix'>
+							<p class="fl clearFix">
+								<a href="#" class='fr'>密码:</a>
+								<i class=' sym fr'>*</i>				
+							</p>
+							<input type="password" name='password' class='user fl'/>
+						</div>
+						<div class='user_box clearFix'>
+							<p class="fl clearFix">
+								<a href="#" class='fr'>确认密码:</a>
+								<i class=' sym fr'>*</i>				
+							</p>
+							<input type="password" name='repassword' class='user fl'/>
+						</div>
+						<div class='user_box clearFix'>
+							<p class="fl clearFix">
+								<a href="#" class='fr'>Email:</a>
+								<i class=' sym fr'>*</i>				
+							</p>
+							<input type="text" name='email' class='user fl'/>
+						</div>
+						<div class='user_box clearFix'>
+							<p class="fl clearFix">
+								<a href="#" class='fr'>验证码:</a>
+								<i class=' sym fr'>*</i>				
+							</p>
+							<input type="text" name='verify' class='verify fl'/>
+							<img src="../helper/code.php" onclick="this.src='../helper/code.php'" id='img' class='ver' />
+							<a href="" id='btn'>看不清,换一张</a>
+						</div>
+						<input type="submit" name='subReg' value='提交' class='sub_reg'/>											
+					</form>
+				</div>
+			</div>
+			<!-- 注册 end -->
+			<!-- footer start -->
+			{include footer.html}
+			<!-- footer end -->
+		</div>
+
+		<script>
+			var oBtn= document.getElementById('btn');
+			var oImg= document.getElementById('img');
+			oBtn.onclick = function ()
+			{
+				oImg.src = './helper/code.php?'+Math.random();
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,166 @@
+  .right{
+	width:1080px;
+	min-height:584px;
+	border-left:1px solid #b5cfd9;
+	background:#fff;
+	float:left;
+	font-family:宋体;
+	border-top:0px solid #e8f3fb;
+	box-shadow:0 0px 10px 3px #e8f3fb inset;
+}
+.right .r-top{
+	width:1055px;
+	height:62px;
+	font-size:14px;
+	color:#0099cc;
+	margin-left:20px;
+	font-weight:bold;
+	line-height:62px;
+	border-bottom:1px dotted #deeffb;
+}
+.r1{
+	width:1055px;
+	height:70px;
+	margin-left:20px;
+	border-bottom:1px dotted #deeffb;
+}
+.r1 li{
+	/*width:1080px;*/
+	height:35px;
+	line-height:35px;
+	margin-left:5px;
+	
+}
+.bol{
+	font-weight:bold;
+}
+.r2{
+	width:1055px;
+	height:97px;
+	margin-left:20px;
+	border-bottom:1px dotted #deeffb;
+}
+.r2 .r2_a{
+	/*width:1080px;*/
+	height:39px;
+	line-height:35px;
+	margin-left:5px;
+	
+}
+.r2 .r2_b{
+	/*width:1080px;*/
+	height:58px;
+	margin-left:5px;
+	
+}
+.r3{
+	width:1055px;
+	height:70px;
+	float:left;
+	margin-left:20px;
+	border-bottom:1px dotted #deeffb;
+}
+.r3_a{
+	/*width:1080px;*/
+	height:39px;
+	line-height:35px;
+	margin-left:5px;
+	
+}
+.r3_b{
+	/*width:1080px;*/
+	height:31px;
+	margin-left:5px;
+	
+}
+.r3_input{
+	width:254px;
+	height:20px;
+	background:#f9f9f9;
+	border:1px solid #ccc;
+	border-top:1px solid #666;
+	border-left:1px solid #666;
+}
+.r3 p{
+	color:#999;
+	display:inline-block;
+	margin-left:31px;
+}
+.r3 .mar1{
+	margin-left:5px;
+	display:inline-block;
+}
+    
+
+.r3 .mar2{
+	margin-left:233px;
+}
+.right .r4{
+	width:1052px;
+	height:36px;
+	float:left;
+	margin-left:20px;
+	background:-moz-linear-gradient(top,#eef6fc,#f5f9fe);/*火狐*/ 
+    background:-webkit-gradient(linear, 0% 50%, 0% 100%,from(#eef6fc), to(#f5f9fe));/*谷歌*/ 
+	color:#0099cc;
+	font-size:12px;
+	font-weight:bold;
+	line-height:36px;
+	border-bottom:1px dotted #deeffb;
+}
+.right .r4 p{
+	margin-left:5px;
+}
+.r5{
+	width:1055px;
+	height:127px;
+	float:left;
+	margin-left:20px;
+	border-bottom:1px dotted #deeffb;
+}
+.r5_a{
+	width:1055px;
+	height:40px;
+	line-height:40px;
+	margin-left:5px;
+}
+.r5_b{
+	width:1055px;
+	height:87px;
+	margin-left:5px;
+	
+}
+.r5_input{
+	width:254px;
+	height:80px;
+	background:#f9f9f9;
+	border:1px solid #ccc;
+	border-top:1px solid #666;
+	border-left:1px solid #666;
+}
+.r6{
+	width:1055px;
+	height:122px;
+	float:left;
+	margin-left:20px;
+	border-bottom:1px dotted #deeffb;
+}
+.submit{
+	margin-left:20px;
+	background:#dddddd;
+	width:35px;
+	height:21px;
+	margin-top:12px;
+	border-right:1px solid #666666;
+	border-bottom:1px solid #666666;
+	margin-bottom:30px;
+}
+
+
+
+
+
+
+
+
+

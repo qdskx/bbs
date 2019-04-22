@@ -1,0 +1,440 @@
+.return_top{
+	width:960px;
+	height: 33px;
+	margin:0px auto ;
+}
+.mar_top{
+	margin-top: 10px;
+}
+.return_top .post_pic{
+	margin-right: 5px;
+}
+.return_top .mid_right{
+	padding:8px 11px 6px 15px;
+	border:#C2D5E3 1px solid;
+}
+.return_top .mid_right .arw_l{
+	width:15px;
+	height: 15px;
+	margin-top: 2px;
+	background: url(../img/sprint.png) no-repeat -150px 0px;
+}
+.return_top a:hover{
+	text-decoration: none;
+}
+.return_top .mid_right:hover{
+	border:#336699 1px solid;
+	color:#336699;
+}
+
+
+
+
+
+
+
+
+.button{
+	width:960px;
+	height:43px;
+	border-bottom:1px solid #cdcdcd;
+	margin:0 auto;
+}
+.return{
+	width:83px;
+	height:26px;
+	border:1px solid #c2d5e3;
+	line-height:26px;
+	
+}
+.b-niu{
+	margin-top:5px;
+	margin-left:5px;
+	float:left;
+}
+.fan{
+	display:inline-lock;
+	float:left;
+}
+.main{
+	width:960px;
+	height:763px;
+	margin:0 auto;
+	/*margin-top:10px;*/
+}
+.main-top{
+	width:960px;
+	height:38px;
+	line-height:38px;
+}
+.main-top p{
+	display:inline-block;
+}
+.main-top p a{
+	color: #336699;
+}
+.main-top span{
+	display:inline-block;
+	margin-left:5px;
+	margin-right:5px;
+	color:#cdcdcd;
+}
+.main-up{
+	width:958px;
+	/*height:247px;*/
+	/*margin-bottom:10px;*/
+	background: #E5EDF2;
+	border:1px solid #cdcdcd;
+	border-bottom: none;
+}
+.up-left{
+	width:160px;
+	height:243px;
+	border-right:1px solid $cdcdcd;
+	background:#e5edf2;
+	float:left;
+}
+
+
+.up-le1
+{
+	display:inline-block;
+	width:160px;
+	height:74px;
+	color:#999;
+	float:left;
+	
+	border-bottom:1px dotted #cdcdcd;
+}
+.up-le1 p{
+	margin-left:30px;
+	margin-top:14px;
+	display:inline-block;
+}
+.up-le1 a{
+	margin-left:30px;
+	margin-top:14px;
+	display:inline-block;
+}
+.up-le1 span{
+	color:#ef6c4f;
+}
+.up-le1 i{
+	color:#cdcdcd;
+}
+.up-le1 .le1-wen
+{
+	font-weight:bold;
+	color:#444;
+	margin-left:15px;
+	margin-top:26px;
+}
+.up-le2{
+	width:160px;
+	height:177px;
+	color:#999;
+	float:left;
+
+	/*border-bottom:4px solid #c2d5e3;*/
+}
+
+.up-le2 img{
+	margin-left:15px;
+	margin-top:10px;
+	cursor:pointer;
+}
+/*.up-le2 a:hover{
+	width: 452px;
+	height: 117px;
+	display: inline-block;
+	background: pink;
+}*/
+.up-le2 p{
+	color:#f26c4f;
+	margin-left:20px;
+	margin-top:14px;
+}
+.up-le2 .pos2{
+	
+	margin-top:5px;
+}
+
+.up-r{
+	width:797px;
+	/*height:243px;*/
+	float:left;
+	background: white;
+	border-bottom:4px solid #e5edf2;
+}
+.up-top{
+	/*width: 200px;*/
+	/*height: 100px;*/
+	/*background: red;*/
+	/*margin-left:20px;*/
+	margin-top: 15px;
+	font-size: 15px;
+	font-weight: bold;
+}
+.up-rtop{
+	width:757px;
+	height:74px;
+	border-bottom:1px dotted #cdcdcd;
+	margin:0 auto;
+	
+}
+.rtop-le{
+	width:200px;
+	height:16px;
+	/*float:left;*/
+	margin-top:35px;
+	/*margin-left: -90px;*/
+	/*margin-left: -90px;*/
+}
+.rtop-le p{
+	display:inline-block;
+	line-height:16px;
+	margin-left:3px;
+	/*width:80px;*/
+	height:16px;
+	float:left;
+}
+
+
+
+
+.rtop-r{
+	width:137px;
+	height:66px;
+	margin-top: -55px;
+}
+
+
+.rtop-r1{
+	width:32px;
+	height:11px;
+	/*margin-top:12px;*/
+	display:inline-block;
+}
+
+
+
+.rtop-r2 {
+	width:137px;
+	height:18px;
+	display:inline-block;
+	margin-top:25px;
+}
+.rtop-r2 p{
+	display:inline-block;
+	float:left;
+	line-height:18px;
+}
+.rtop-r2 input{
+	width:27px;
+	height:16px;
+	border-top:1px solid #848484;
+	border-left:1px solid #848484;
+	border-right:1px solid #e0e0e0;
+	border-bottom:1px solid #e0e0e0;
+}
+.rtop-r2  .sub_elevator{
+	line-height:16px;
+	width: 17px;
+	border:none;
+	cursor: pointer;
+	margin-left: 2px;
+	background: url(../img/fj_btn.png);
+}
+.rtop-bimg1{
+	margin-top:14px;
+}
+.up-mid{
+	width:757px;
+	min-height:120px;
+	margin:0 auto;
+	margin-right: 20px;
+	padding-top:10px;
+	padding-bottom: 10px;
+}
+.up-mid .displayed{
+	width:750px;
+	height: 24px;
+	padding-top: 12px;
+	padding-left: 6px;
+	border:1px dashed #FF9B9B;
+}
+.up-mid .displayed:hover{
+	background: #F7F7F7;
+}
+.up-mid .displayed i{
+	width:20px;
+	height: 22px;
+	margin-top: -4px;
+	background: url(../img/lock.gif);
+}
+.up-mid .displayed cite{
+	color:#F26C4F;
+	font-weight: bold;
+}
+.up-mid .displayed b{
+	color: #666;
+}
+.up-mid .displayed a{
+	margin-right: 20px;
+	color:#3366B2;
+	font-weight: bold;
+}
+.up-mid .displayed strong{
+	width:16px;
+	height: 16px;
+	margin-right: 5px;
+	background: url(../img/sprint.png) -224px 0 ;
+}
+.up-rb{
+	width:757px;
+	height:36px;
+	border-top:1px dotted #cdcdcd;
+	margin:0 auto;
+	
+}
+.rb-le{
+	width:50px;
+	height:15px;
+	display:inline-block;
+	margin-top:10px;
+}
+.rb-le a{
+	display:inline-block;
+	line-height:15px;
+	float:left;
+	margin-left:5px;
+}
+.rb-le img{
+	
+	float:left;
+}
+.rb-r{
+	width:182px;
+	height:15px;
+	display:inline-block;
+	margin-top:10px;
+}
+.rb-r a{
+	color:#333;
+}
+.rb-r span{
+	color:#cdcdcd;
+}
+
+/*一个分页 start*/
+.main .page{
+	width:960px;
+	height: 25px;
+	margin:20px auto 10px;
+	line-height: 25px;
+}
+.main .page_num{
+	width:30px;
+	height: 22px;
+}
+.main .sub_page{
+	width:32px;
+	height: 22px;
+}
+.main .page_mar{
+	margin:0 8px;
+}
+/*一个分页 end*/
+
+
+/*下半部分发帖    s*/
+.main-bot
+{
+	width:958px;
+	/*height:358px;*/
+	height:486px;
+	background: #E5EDF2;
+	border:1px solid #cdcdcd;
+	margin:0  auto 30px;
+}
+
+.bot-left{
+	width:160px;
+	height:358px;
+	
+	background:#e5edf2;
+	float:left;
+}
+.bot-left a{
+	display:inline-block;
+	margin-top:20px;
+	margin-left:20px;
+}
+.bot-r{
+	/*width:755px;*/
+	width:776px;
+	/*height:272px;*/
+	/*height:397px;*/
+	height:464px;
+	background: white;
+	border:1px solid #cdcdcd;
+	border-radius:1%;
+	/*margin-top:20px;*/
+	padding-top: 20px;
+	padding-left: 20px;
+	/*margin-left:20px;*/
+	float:left;
+}
+.bot-r .verify{
+	width:60px;
+	height: 23px;
+	margin-top: 15px;
+	border-top:#848484 solid 1px;
+	border-left:#848484 solid 1px;
+	border-right:#E0E0E0 solid 1px;
+	border-bottom:#E0E0E0 solid 1px;
+}
+.bot-r .ver{
+	margin-left: 10px;
+	margin-top: 15px;
+	margin-right: 8px;
+	width: 80px;
+	height: 23px;
+}
+.bot-r .code{
+	margin-top: 15px;
+}
+.return_sub{
+	width:72px;
+	height:24px;
+	background:url(../img/fl_hd.png) repeat-x;
+	border:1px solid #235994;
+	color:#fff;
+	/*margin-top:140px;*/
+	margin-top:38px;
+	margin-left:-242px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*下半部分发帖     e*/
+
+
+
+
+
+
+
+
+
+

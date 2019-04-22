@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset='utf-8' />
+		<title>{$title}</title>
+		<link rel='stylesheet' type='text/css' href='{$dir}/css/adminBase.css' />
+		<link rel='stylesheet' type='text/css' href='{$dir}/css/G-index.css' />
+		<link rel='stylesheet' type='text/css' href='{$dir}/css/adminIp.css' />
+	</head>
+	<body>
+		<div class='box clearFix'>
+			<div class='top fl clearFix'>
+				<div class='top1'></div>
+				<div class='top2'></div>
+				<div class='top3'></div>
+				<div class='top-le'><i>Discuz!</i><br/>Control Panel</div>
+				<div class='top-gang'></div>
+				<ul class='nav clearFix'>
+					<li><a href='adminInfo.php'>站点信息</a></li>
+					<li><a href='adminUser.php' class='onclick'>用户管理</a></li>
+					<li><a href='adminCate.php'>版块管理</a></li>
+					<li><a href='adminPost.php'>帖子管理</a></li>
+				</ul>
+				<ul class='exit'>
+					<li><p>你好, 创始人 </p>
+						<em>&nbsp;&nbsp;
+						{if isset($_SESSION['username'])}
+							{$_SESSION['username']}
+						{else}
+						admin
+						{/if}
+						&nbsp;&nbsp;</em>	
+					<a href="adminLoginout.php">[退出]</a>
+					<a href='../index.php'><img src="{$dir}/img/nav.jpg"></a>
+					</li>
+				</ul>
+			</div>
+
+
+
+			<div class='left clearFix'>
+				<ul class='nav-le clearFix'>
+					<li>
+						<a href="adminUser.php">
+							<img src='{$dir}/img/dot.gif'>编辑用户
+						</a>
+					</li>
+					<li class='on1'>
+						<a href="adminIp.php">
+							<img src='{$dir}/img/dot.gif'>禁止IP
+						</a>
+					</li>
+					<li class='bottom'>
+						Powered by 
+						<a href="#">phpxy</a> 
+						V2© 2012, 
+						<a href="#">phpxy</a> 
+						Inc.
+					</li>
+				</ul>
+			</div>
+
+			<div class="right clearFix fl">
+				<div class='r-top'>禁止 IP</div>
+				<div class='r1'><p>技巧提示</p></div>
+				<ul class='r2 clearFix'>
+					<li><img src='{$dir}/img/dot.gif'>被限制的IP地址不能访问本站。</li>
+					<li><img src='{$dir}/img/dot.gif'>有效期如果设置为空则视为永久禁止。</li>
+				</ul>
+
+				{if !empty($all_ip)}
+				<ul class='r6 clearFix'>
+					<li style='margin-left:93px'>IP 地址</li>
+					<li style='margin-left:220px'>起始时间</li>
+					<li style='margin-left:200px'>终止时间</li>	
+					
+				</ul>
+				{foreach $all_ip as $value}
+					<ul class='r6 clearFix' style="margin-bottom:70px;">
+						<li style='margin-left:7px'>被禁IP</li>
+						<li style='margin-left:30px'><?php echo long2ip($value['ip']);?></li>
+						<li style='margin-left:172px'><?php echo date('Y-m-d H:i:s' , $value['addtime']);?></li>
+						<li style='margin-left:125px'><?php echo date('Y-m-d H:i:s' , $value['overtime']);?></li>	
+						<li style='margin-left:118px'>
+							<a href="adminIp.php?pid={$value['pid']}&unlock=1">解除禁止</a></li>							
+					</ul>
+				{/foreach}
+				{/if}
+				<ul class='r3 clearFix '>
+					<li style='margin-left:93px'>IP 地址</li>
+					<li style='margin-left:417px'>起始时间</li>
+					<li style='margin-left:150px'>终止时间</li>	
+				</ul>
+				<form action="adminIp.php" method="post" enctype="multipart/form-data" class="clearFix" >
+					<div class='r3 r4'>
+						<p style="margin-right:64px">新增</p>
+					    <input type='text' name='ip1' value='' size='3' maxlength="3" /><i> . </i>
+					    <input type='text' name='ip2' value='' size='3' maxlength="3" /><i> . </i>
+					    <input type='text' name='ip3' value='' size='3' maxlength="3" /><i> . </i>
+					    <input type='text' name='ip4' value='' size='3' maxlength="3" />
+						<p style='margin-left:200px'><?php echo date('Y-m-d H:i:s' , time());?></p>
+						<p style='margin-left:110px'>有效期:</p>
+						<input type='text' name='ban_day' value='3' />
+						<p style='margin-left:15px'>天</p>
+					</div>
+					<div class="r5">
+						<input type='submit' name='sub_ip' class="submit" />
+					</div>					 
+				</form>	
+			</div>
+		</div>
+	
+	
+	</body>
+</html>

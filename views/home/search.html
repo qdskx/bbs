@@ -1,0 +1,99 @@
+<html>
+	<head>
+		<meta charset='utf-8' />
+		<title>{$title}</title>
+		<link rel='stylesheet' href='{$dir}/css/base.css' />
+		<link rel='stylesheet' href='{$dir}/css/search.css' />
+	</head>
+	<body>
+		<div class="head clearFix">
+			<p class='first clearFix'><a href="../index.php">返回首页</a></p>
+		
+			<div class='second clearFix'>
+				{if isset($_SESSION['username'])}
+				<a href="">{$_SESSION['username']}</a>
+				{else}
+				<a href='midLogin.php'>登录</a>
+				<a href='register.php'>立即注册</a>
+				{/if}
+			</div>
+		</div>
+		<div class='logo clearFix'>
+			<form action="search.php" method='post' class="logo_sea fr clearFix">
+				<input type='text' name='search' value="{$key}" class='logo_sea1 fl' placeholder="请输入搜索内容" />
+				<input type='submit' name='sub_sear' value='' class='logo_sea2 fl' >
+			</form>
+		</div>
+		
+		{if !empty($paging) && !empty($paging['data'])}
+			<div class='top'>
+				<p>结果: 找到相关内容 {$paging['count']} 个</p>	
+			</div>
+			<div class='right'>
+				<ul class='r2 clearFix'>
+					<li style='margin-left:65px'>标题</li>
+					<li>版块</li>
+					<li>作者</li>
+					<li>回复</li>
+					<li>浏览</li>
+					<li>最后发表</li>
+				</ul>
+				{foreach $paging['data'] as $value}
+				<div class='r3'>
+					<!-- <input type='checkbox' name='tid[]' value="{$value['tid']}"  style="margin-left:9px;" /> -->
+					<p style='padding-left: 70px;'><a href="return_card.php?cid={$value['cid']}&tid={$value['tid']}&key={$key}">{$value['title']}</a></p>
+					<p class='b2'><a href="#" >{$value['classname']}</a></p>
+					<p class='b3'>{$value['username']}</p>
+					<a href='#' class='b4'>{$value['replycount']}</a>
+					<a href='#' class='b5'>{$value['views']}</a>
+					<a href='#' class='b6'><?php echo date('Y-m-d H:i:s' , $value['postime']);?></a>
+				</div>
+				{/foreach}
+			</div>
+
+			<!-- 分页 start -->
+			<div class='page clearFix'>
+				<form action="search.php?page={$paging['page']}&key={$key}" method='post' class='clearFix'>
+					<input type="text" name='page_num' value='1' class="page_num fl" />
+
+					<input type="submit" name='sub_page' value='GO' class='sub_page fl' />	
+
+					
+					<i class='page_mar fl'>{$paging['page']}</i>	
+
+					<a href="search.php?page=1&key={$key}" class='page_mar fl'>首页</i>	
+
+
+					<a href="search.php?page={$paging['prev']}&key={$key}" class='page_mar fl'>上一页</a>		
+
+
+
+					<a href="search.php?page={$paging['next']}&key={$key}" class='page_mar fl'>下一页</a>
+
+
+					
+					<a href="search.php?page={$paging['pageCount']}&key={$key}" class='page_mar fl'>尾页</a>	
+
+
+					<i class='page_mar fl'>共有{$paging['count']}条记录 </i>					
+					<i class='page_mar fl'> 
+						每页显示{$paging['num']}条,
+						本页{$paging['count'] == 0 ? 0 : $paging['offset'] + 1;}-{$paging['offset']+$paging['num'] > $paging['count'] ? $paging['count'] : $paging['offset']+$paging['num']}条 
+					</i>	
+
+					<i class='page_mar fl'> 1/{$paging['pageCount']}页 </i>
+				</form>
+			</div>
+			<!-- 分页 end -->
+		{else}			
+			<div class='top'>
+				<p>结果: 找到 “活动” 相关内容 0 个</p>	
+			</div>
+			<div class="main clearFix">
+				<p>对不起，没有找到匹配结果。</p>
+			</div>		
+		{/if}
+		<div class='footer'>Powered by <a href="#" style="font-weight:bold;color:#337DC2;">phpxy</a> V2 &nbsp;© 2012 <a href="#" style='color:#337DC2;'>phpxy Inc.</a></div>
+
+	</body>
+</html>

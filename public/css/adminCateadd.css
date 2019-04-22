@@ -1,0 +1,176 @@
+.right{
+	width:1080px;
+	min-height:584px;
+	border-left:1px solid #b5cfd9;
+	background:#fff;
+	float:left;
+	font-family:宋体;
+	border-top:0px solid #e8f3fb;
+	box-shadow:0 0px 10px 3px #e8f3fb inset;
+}
+.right .r-top{
+	font-size:14px;
+	color:#0099cc;
+	margin-top:20px;
+	margin-left:20px;
+	font-weight:bold;
+}
+.right .r1{
+	width:1042px;
+	height:36px;
+	float:left;
+	margin-left:20px;
+	margin-top:20px;
+	background:-moz-linear-gradient(top,#eef6fc,#f5f9fe);/*火狐*/ 
+    background:-webkit-gradient(linear, 0% 50%, 0% 100%,from(#eef6fc), to(#f5f9fe));/*谷歌*/ 
+	color:#0099cc;
+	font-size:12px;
+	font-weight:bold;
+	line-height:36px;
+	border-bottom:1px dotted #deeffb;
+}
+.right .r1 p{
+	margin-left:5px;
+}
+.right .r2{
+	width:1042px;
+	height:36px;
+	float:left;
+	color:#555555;
+	line-height:36px;
+	font-size:12px;
+	margin-left:20px;
+	border-bottom:1px dotted #deeffb;
+}
+.right .r2 img{
+	margin-left:10px;
+	margin-right:10px;
+}
+.r3{
+	width:1042px;
+	height:36px;
+	float:left;
+	color:#555555;
+	line-height:36px;
+	font-size:12px;
+	margin-left:20px;
+	border-bottom:1px dotted #deeffb;
+	
+}
+.r3:hover{
+	background:#eef6fc;
+}
+.r4:hover{
+	background:#eef6fc;
+}
+.r3 input{
+	margin-left:225px;
+	float:left;
+	width:195px;
+	height:19px;
+	margin-top:6px;
+	background:#f9f9f9;
+	border:1px solid #ccc;
+	border-top:1px solid #666;
+	border-left:1px solid #666;
+}
+.r4{
+	width:1052px;
+	height:36px;
+	float:left;
+	color:#555555;
+	line-height:36px;
+	font-size:12px;
+	margin-left:20px;
+}
+p{
+	display:inline-block;
+	float:left;
+}
+.xuan{
+	background:#f9f9f9;
+	float:left;
+	margin-left:213px;
+	margin-top:9px;
+}
+.r4 .submit{
+	margin-left:20px;
+	background:-webkit-linear-gradient(rgba(255, 255, 255, 1), rgba(240,247,253,1));
+	background:-o-linear-gradient(rgba(255, 255, 255, 1), rgba(240,247,253,1));
+	background:linear-gradient(rgba(255, 255, 255, 1), rgba(240,247,253,1)); 
+	width:60px;
+	height:25px;
+	margin-top:9px;
+	border-radius: 8px;
+	/*border-right:1px solid #666666;
+	border-bottom:1px solid #666666;*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

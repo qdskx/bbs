@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset='utf-8' />
+		<title>{$title}</title>
+		<link rel='stylesheet' type='text/css' href='{$dir}/css/adminBase.css' />
+		<link rel='stylesheet' type='text/css' href='{$dir}/css/G-index.css' />
+		<link rel='stylesheet' type='text/css' href='{$dir}/css/adminRecycle.css' />
+	</head>
+	<body>
+		<div class='box clearFix'>
+			<div class='top fl clearFix'>
+				<div class='top1'></div>
+				<div class='top2'></div>
+				<div class='top3'></div>
+				<div class='top-le'><i>Discuz!</i><br/>Control Panel</div>
+				<div class='top-gang'></div>
+				<ul class='nav clearFix'>
+					<li><a href='adminInfo.php'>站点信息</a></li>
+					<li><a href='adminUser.php'>用户管理</a></li>
+					<li><a href='adminCate.php'>版块管理</a></li>
+					<li><a href='adminPost.php' class='onclick'>帖子管理</a></li>
+				</ul>
+				<ul class='exit'>
+					<li>
+						<i class='fl'>你好, 创始人 </i>
+						<em>&nbsp;&nbsp;
+						{if isset($_SESSION['username'])}
+							{$_SESSION['username']}
+						{else}
+						admin
+						{/if}
+						&nbsp;&nbsp;</em>	
+					<a href="adminLoginout.php">[退出]</a>
+					<a href='../index.php'><img src="{$dir}/img/nav.jpg"></a>
+					</li>
+				</ul>
+			</div>
+			<div class='left clearFix'>
+				<ul class='nav-le clearFix'>
+					<li><a href="adminPost.php"><img src='{$dir}/img/dot.gif'>帖子管理</a></li>
+					<li><a href="adminPostdel.php"><img src='{$dir}/img/dot.gif'>帖子回收站</a></li>
+					<li class='on1'><a href="adminRecycle.php"><img src='{$dir}/img/dot.gif'>回帖管理</a></li>
+					<li><a href="adminRecycledel.php"><img src='{$dir}/img/dot.gif'>回帖回收站</a></li>
+					<li class='bottom'>Powered by <a href="#">phpxy</a> V2© 2012, <a href="#">phpxy</a> Inc.</li>
+				</ul>		
+			</div>
+			<div class='right clearFix'>
+				<div class='r-top'>回帖管理</div>
+				<div class='r1'>
+					{if !empty($paging) && !empty($paging['count'])}
+					<p>回帖数：
+						{$paging['count']}
+					</p>
+					{else}
+					<p>回帖数：0</p>
+					{/if}
+				</div>
+				<ul class='r2 clearFix'>
+					<li style='margin-left:73px'>回复内容</li>
+					<li style='margin-left:327px'>版块</li>
+					<li style='margin-left:90px'>作者</li>
+					<li style='margin-left:110px'>回复时间</li>					
+				</ul>
+				<form  action="adminRecycle.php" method="post" enctype="multipart/form-data" class="clearFix">
+				{if !empty($paging) && !empty($paging['data'])}
+				{foreach $paging['data'] as $value}
+					<div class='r3'>
+						<input type='checkbox' name='tid[]' value="{$value['tid']}" style="margin-left:9px;" />
+						<a href="../home/returnCard.php?cid={$value['cid']}&tid={$value['replyid']}" class='fl' style='margin-right: 255px;'>{$str=htmlspecialchars_decode($value['content'])}</a>
+						<span class='fl'>{$value['classname']}</span>
+						<a href='#'>{$value['username']}</a>
+						<a href='#'><?php echo date('Y-m-d H:i:s' , $value['postime']);?></a>
+					</div>
+				{/foreach}
+				{/if}
+					<input type='submit' name='sub_del' value='放入回收站' class='submit' />
+
+					<!-- 分页 start -->
+					<div class='page fr clearFix'>
+						<form action="adminRecycle.php?page={$paging['page']}" method='post' class='fr clearFix'>
+							<input type="text" name='page_num' value='1' class="page_num fl" />
+
+							<input type="submit" name='sub_page' value='GO' class='sub_page fl' />	
+
+							
+							<i class='page_mar fl'>{$paging['page']}</i>	
+
+							<a href='adminRecycle.php?page=1' class='page_mar fl'>首页</i>	
+
+
+							<a href="adminRecycle.php?page={$paging['prev']}" class='page_mar fl'>上一页</a>		
+
+
+
+							<a href="adminRecycle.php?page={$paging['next']}" class='page_mar fl'>下一页</a>
+
+
+							
+							<a href="adminRecycle.php?page={$paging['pageCount']}" class='page_mar fl'>尾页</a>	
+
+
+							<i class='page_mar fl'>共有{$paging['count']}条记录 </i>					
+							<i class='page_mar fl'> 
+								每页显示{$paging['num']}条,
+								本页{$paging['count'] == 0 ? 0 : $paging['offset'] + 1;}-{$paging['offset']+$paging['num'] > $paging['count'] ? $paging['count'] : $paging['offset']+$paging['num']}条 
+							</i>	
+							
+							<i class='page_mar fl'> 1/{$paging['pageCount']}页 </i>
+						</form>
+					</div>
+					<!-- 分页 end -->							
+				</form>
+			
+			</div>
+		</div>
+	
+	
+	</body>
+</html>

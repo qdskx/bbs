@@ -1,0 +1,171 @@
+.right{
+	width:1080px;
+	min-height:584px;
+	background:#fff;
+	float:left;
+	border-left:1px solid #b5cfd9;
+	font-family:宋体;
+	border-top:0px solid #e8f3fb;
+	box-shadow:0 0px 10px 3px #e8f3fb inset;
+}
+.right .r-top{
+	font-size:14px;
+	color:#0099cc;
+	margin-top:20px;
+	margin-left:20px;
+	font-weight:bold;
+}
+.r2:hover{
+	background:#eef6fc;
+}
+.r1:hover{
+	background:#eef6fc;
+}
+.r4:hover{
+	background:#eef6fc;
+}
+.right .r1{
+	width:1052px;
+	height:70px;
+	margin-top:21px;
+	margin-left:20px;
+	border-top:1px dotted #deeffb;
+	border-bottom:1px dotted #deeffb;
+}
+.right .r2{
+	margin-top:0px;
+	border-top:0px dotted #deeffb;
+	border-bottom:1px dotted #deeffb;
+}
+.right .r1 input{
+	background:#f9f9f9;
+	border:1px solid #ccc;
+	border-top:1px solid #666;
+	border-left:1px solid #666;
+	width:250px;
+	height:20px;
+	line-height:20px;
+	margin-right:60px;
+	margin-left:5px;
+	padding-left: 4px;
+}
+.zhu:hover{
+	color:#333;
+	
+}
+.right .r1 p{
+	display:inline-block;
+	font-size:12px;
+	color:#999;
+}
+.right .r1 .title{
+	font-weight:bolder;
+	margin-top:12px;
+	margin-bottom:15px;
+	color:#666;
+	margin-left:5px;
+}
+.right .r3{
+	width:1052px;
+	height:36px;
+	float:left;
+	margin-top: 10px;
+	margin-left:20px;
+	background:-moz-linear-gradient(top,#eef6fc,#f5f9fe);/*火狐*/ 
+    background:-webkit-gradient(linear, 0% 50%, 0% 100%,from(#eef6fc), to(#f5f9fe));/*谷歌*/ 
+	color:#0099cc;
+	font-size:12px;
+	font-weight:bold;
+}
+.right .r3 p{
+	margin-left:5px;
+	margin-top:11px;
+}
+.right .r4{
+	width:1052px;
+	height:70px;
+	float:left;
+	margin-left:20px;
+	border-bottom:1px dotted #deeffb;
+}
+.right .r4 .title1{
+	font-weight:bolder;
+	margin-top:12px;
+	margin-bottom:15px;
+	color:#666;
+	margin-left:5px;
+	display:inline-block;
+	font-size:12px;
+}
+.right .r4 input{
+	margin-top:1px;
+	margin-left:10px;
+}
+.right .r4 label{
+	color:#666;
+	font-size:12px;
+	margin-left:7px;
+}
+.right .r4 label:hover{
+	color:#00dd00;
+	
+}
+.right .r4 p{
+	display:inline-block;
+	font-size:12px;
+	color:#999;
+	margin-left:230px;
+}
+.submit{
+	margin-left:30px;
+	background:#dddddd;
+	width:35px;
+	height:21px;
+	margin-top:12px;
+	border-right:1px solid #666666;
+	border-bottom:1px solid #666666;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

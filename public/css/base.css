@@ -1,0 +1,29 @@
+*{margin:0;padding:0;}
+body , h1 , h2 , h3 , h4 , h5 , h6 , p , div , ul , ol  ,dl , i , em , strong , b ,form {
+	font-size:12px;
+	/*font-size:62.5%;*/
+	font-family:'宋体';
+}
+ul , ol , dl , li{list-style:none;}
+a{text-decoration:none;color:#333}
+i , em , cite{font-style:normal;}
+b , strong , cite{font-weight:normal;}
+input , textarea{outline:none;resize:none;}
+.fl{
+	float:left;
+}
+.fr{
+	float:right;
+}
+.clearFix:after{
+	display:block;
+	content:'';
+	clear:both;
+	zoom:1;
+}
+a:hover{
+	text-decoration:underline;
+	color:#333;
+}
+
+

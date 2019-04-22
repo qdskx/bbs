@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset='utf-8' />
+		<title>{$title}</title>
+		<link rel='stylesheet' type='text/css' href='{$dir}/css/adminBase.css' />
+		<link rel='stylesheet' type='text/css' href='{$dir}/css/G-index.css' />
+		<link rel='stylesheet' type='text/css' href='{$dir}/css/adminLink.css' />
+	</head>
+	<body>
+		<div class='box clearFix'>
+			<div class='top fl clearFix'>
+				<div class='top1'></div>
+				<div class='top2'></div>
+				<div class='top3'></div>
+				<div class='top-le'><i>Discuz!</i><br/>Control Panel</div>
+				<div class='top-gang'></div>
+				<ul class='nav clearFix'>
+					<li><a href='adminInfo.php' class='onclick'>站点信息</a></li>
+					<li><a href='adminUser.php'>用户管理</a></li>
+					<li><a href='adminCate.php'>版块管理</a></li>
+					<li><a href='adminPost.php'>帖子管理</a></li>
+				</ul>
+				<ul class='exit'>
+					<li><p>你好, 创始人 </p>
+						<em>&nbsp;&nbsp;
+						{if isset($_SESSION['username'])}
+							{$_SESSION['username']}
+						{else}
+						admin
+						{/if}
+						&nbsp;&nbsp;</em>
+					<a href="admin_loginout.php">[退出]</a>
+					<a href='../index.php'><img src="{$dir}/img/nav.jpg"></a>
+					</li>
+				</ul>
+			</div>
+			<div class='left clearFix'>
+				<ul class='nav-le clearFix'>
+					<li><a href="adminInfo.php"><img src='{$dir}/img/dot.gif'>站点信息</a></li>
+					<li class='on1'><a href="adminLink.php"><img src='{$dir}/img/dot.gif'>友情链接</a></li>
+					<li class='bottom'>Powered by <a href="#">phpxy</a> V2© 2012, <a href="#">phpxy</a> Inc.</li>
+				</ul>
+			</div>
+			<div class='right clearFix'>
+				<div class='r-top'>站点信息</div>
+				<div class='r1'><p>技巧提示</p></div>
+				<ul class='r2 clearFix'>
+						<li><img src='{$dir}/img/dot.gif'>未填写文字说明的项目将以紧凑型显示。</li>
+				</ul>
+				<ul class='r2 r3 clearFix'>
+						<li style='margin-left:60px'>显示顺序</li>
+						<li style='margin-left:46px'>站点名称</li>
+						<li style='margin-left:134px'>站点 URL</li>
+						<li style='margin-left:128px'>文字说明(可选)</li>
+						<li style='margin-left:278px'>logo 地址(可选)</li>
+				</ul>
+				
+				
+				<form  action="adminLink.php" method="post" enctype="multipart/form-data" >
+				{if !empty($link_info)}
+				{foreach $link_info as $value}
+					<div class='r4'>
+						<input type='checkbox' name="lid[{$value['lid']}]" value="{$value['lid']}" style="margin-left:3px;margin-right:43px;">
+						<input type='text' name="showOrder[{$value['lid']}]" value="{$value['showorder']}" style="width:44px;margin-right:51px">
+						<input type='text' name="siteName[{$value['lid']}]" value="{$value['name']}" style="width:104px;margin-right:79px">
+						<input type='text' name="siteUrl[{$value['lid']}]" value="{$value['url']}" style="width:104px;margin-right:79px">
+						<input type='text' name="siteIntro[{$value['lid']}]" value="{$value['description']}" style="width:326px;margin-right:40px">
+						<input type='text' name="siteLogo[{$value['lid']}]" value="{$value['logo']}" style="width:104px">			
+					</div>
+				{/foreach}
+				{/if}
+					<div class='for'>
+					    <input type='submit' name='sub_update' value='修改' class='submit1' />
+					    <input type='submit' name='sub_del' value='删除' class='submit2' />
+					</div>
+				
+				
+				</form>
+				<ul class='r2 r3 clearFix'>
+						<li style='margin-left:60px'>显示顺序</li>
+						<li style='margin-left:46px'>站点名称</li>
+						<li style='margin-left:134px'>站点 URL</li>
+						<li style='margin-left:128px'>文字说明(可选)</li>
+						<li style='margin-left:278px'>logo 地址(可选)</li>
+				</ul>
+				<div class='r4 r5'>
+					<img src='{$dir}/img/addicn.gif' style='margin-left:60px'><p style='margin-left:10px;display:inline-block;'>添加友情链接</p>
+				</div>
+				<form  action="adminLink.php" method="post" enctype="multipart/form-data">
+					
+					<div class='r4'>
+					
+						<input type='text' name='Lorder' value='' style="width:44px;margin-right:51px;margin-left:60px">
+						<input type='text' name='Lname' value='' style="width:104px;margin-right:79px">
+						<input type='text' name='Lurl' value='' style="width:104px;margin-right:79px">
+						<input type='text' name='Lintro' value='' style="width:326px;margin-right:40px">
+						<input type='text' name='Llogo' value='' style="width:104px">
+					
+					</div>
+					
+					    <input type='submit' name='sub_add' value='添加' class='submit3'>
+					
+				</form>
+			</div>
+		</div>
+	
+	
+	</body>
+</html>

@@ -1,0 +1,70 @@
+body{
+	width:1280px;
+	/*background:url(../public/img/16.png) no-repeat;*/
+}
+.logo{
+	width:600px;
+	height:152px;
+	
+	font-size:12px;
+	margin: 120px 340px 0px;
+	float:left;
+	font-family:宋体;
+}
+.logo .logo1{
+	width:310PX;
+	height:36px;
+	margin-top:76px;
+	float:left;
+	line-height:18px;
+}
+.login{
+	width:259px;
+	height:152px;
+	float:right;
+}
+.login input,select,option{
+	background:#f9f9f9;
+	margin-top:5px;
+	
+}
+a{
+	color:#4c79c5;
+}
+.footer{
+	width:598px;
+	height:21px;
+	font-size:9px;
+	color:#555555;
+	float:left;
+	margin: 250px 340px 0px;
+	text-align:center;
+	line-height:21px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
